@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry 🌸</title>
+    <style>
+        /* Basic Styling */
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background: linear-gradient(to bottom, #e0c3fc, #8ec5fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #444;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            color: #6a1b9a;
+            margin-bottom: 10px;
+            animation: shake 2s infinite;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+            margin: 10px 0 20px;
+        }
+
+        /* Button Styling */
+        button {
+            padding: 12px 24px;
+            font-size: 1em;
+            color: white;
+            background: #6a1b9a;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            box-shadow: 0 3px 12px rgba(106, 27, 154, 0.3);
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Floating Petals */
+        .petal {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #f06292;
+            opacity: 0.7;
+            border-radius: 50%;
+            transform-origin: center;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .petal:nth-child(1) { left: 15%; top: 10%; animation-delay: 0s; }
+        .petal:nth-child(2) { left: 75%; top: 20%; animation-delay: 1s; }
+        .petal:nth-child(3) { left: 45%; top: 35%; animation-delay: 2s; }
+        .petal:nth-child(4) { left: 85%; top: 50%; animation-delay: 3s; }
+        .petal:nth-child(5) { left: 25%; top: 65%; animation-delay: 4s; }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-2px); }
+            50% { transform: translateX(2px); }
+            75% { transform: translateX(-2px); }
+            100% { transform: translateX(0); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0.7; }
+            50% { opacity: 1; }
+            100% { transform: translateY(-300px) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I'm Really Sorry 🌸</h1>
+        <p>
+            I didn’t mean to overstep or make you uncomfortable. It’s just that sometimes, I get caught up in trying to make you smile. 😊
+            If I went too far, please know I’m genuinely sorry.
+        </p>
+        <p>
+            I care about you and hope you can forgive me. Let’s start fresh whenever you're ready!
+        </p>
+        <button onclick="alert('Thank you for giving me a second chance! 🌸')">Forgive Me?</button>
+    </div>
+
+    <!-- Floating Petals -->
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+</body>
+</html>
